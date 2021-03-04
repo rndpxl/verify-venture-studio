@@ -14,11 +14,22 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
+
+        <section className="mission" data-midnight="default">
+          <div className="grid-container fluid">
+            <div className="grid-x">
+              <div className="cell medium-6">
+                <p  data-in-view-class="animated fadeInUp" data-remove-class="invisible"><span className="light">Corporate teams and entrepreneurs typically face an intimidating problem:</span> <span className="med">growth and executing new ideas takes people, time and technology beyond current capacity.</span> Verify brings all three to the table to create or expand an organization’s capabilities.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
+            <h2 className="section-headline">Recent articles!!!sdsd</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
